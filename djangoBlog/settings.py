@@ -68,9 +68,8 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'djangoBlog.wsgi.application'
-
-
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 

@@ -1,14 +1,15 @@
-{%extends 'base.html'%}
-{%block title%}
+{% extends 'base.html' %}
+{% block title %}
 articles
-{%endblock%}
-{%block content%}
+{% endblock %}
+
+{% block content %}
  <div class="container">
     <h1>Articles list</h1>
     {% for article in articles %}
-    <h2><a href="#">{{article.title}}</a></h2>
+    <h2><a href="{%  url 'articles:detail' slug=article.slug %}">{{article.title}}</a></h2>
     <p>{{article.snippet}}</p>
     <p>{{article.date}}</p>
     {% endfor %}
 </div>
-{%endblock%}
+{% endblock %}
